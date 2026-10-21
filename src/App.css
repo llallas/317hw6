@@ -1,0 +1,64 @@
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.event-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.meetup-badge {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+
+.event-title {
+  font-size: clamp(1.75rem, 6vw, 2.25rem);
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+  color: #f8fafc;
+}
+
+.event-details {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin: 0;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 2rem;
+  width: 100%;
+  justify-items: center;
+  margin-bottom: 3rem;
+}
+
+.app-footer {
+  margin-top: auto;
+  padding: 1.5rem 0;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+  width: 100%;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
